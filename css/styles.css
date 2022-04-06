@@ -1,0 +1,209 @@
+/* Палитра цветов проекта */
+:root {
+  --main-background-color: #ffffff;
+  --second-background-color: #2f303a;
+  --button-background-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --black-color: #000000;
+  --hover-focus-btn: #188CE8;
+  --white-text-color: #ffffff;
+  --title-text-color: #212121;
+  --primery-text-color: #757575;
+  /* Размеры шрифтов */
+  --main-font-size: 14px;
+  --button-font-size: 16px;
+}
+
+/* Стили для страницы Студия */
+body {
+  background-color: var(--main-background-color);
+  color: var(--primery-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.hidden {
+  color: transparent;
+  cursor: default;
+}
+
+.hidden::selection {
+  color: transparent;
+  cursor: default;
+}
+/* Стили логотипа */
+.logo {
+  color: var(--black-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.part-logo {
+  color: var(--accent-color);
+}
+
+/* Стили для шапки сайта */
+.site-nav-link,
+.site-contact-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: var(--main-font-size);
+  line-height: 1.14;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.site-contact-link:hover,
+.site-contact-link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav-link.current {
+  color: var(--accent-color);
+}
+/* Пеопределение цвета для контактов студии */
+.site-contact .link {
+  color: var(--primery-text-color);
+}
+
+/* Стилизация Основного контента страницы. Секция герой */
+.hero {
+  background-color: var(--second-background-color);
+}
+
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Оформление кнопки "Заказать услугу" */
+.btn {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: var(--button-font-size);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover,
+.btn:focus {
+background-color: var(--hover-focus-btn);
+}
+
+/* Стили всех секций страницы Студия */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Стили для секции Преимущества */
+.feature-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* Стили для секции Наша Команда */
+.section-team {
+  background-color: var(--button-background-color);
+}
+
+.team-item {
+  background-color: var(--white-text-color);
+}
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-job {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Стили футера страницы Студия */
+.footer {
+  background: var(--second-background-color);
+}
+
+.footer-link,
+.footer-address {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.footer.logo,
+.footer-address {
+  color: var(--white-text-color);
+}
+
+/* Стили для страницы Портфолио */
+.filter-btn {
+  color: var(--title-text-color);
+  background-color: var(--button-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--button-font-size);
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
